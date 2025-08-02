@@ -1,0 +1,8 @@
+org\example\repository\BookRepository.class
+org\example\entity\Book.class
+org\example\controller\LibraryController.class
+org\example\service\LibraryService.class
+org\example\LibraryApplication.class
+org\example\service\impl\LibraryServiceImpl.class
+org\example\repository\BorrowerRepository.class
+org\example\entity\Borrower.class

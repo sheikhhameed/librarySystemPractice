@@ -1,0 +1,85 @@
+#server:
+#  port:8081
+#
+#spring:
+#  application:
+#    name: library-service
+#
+# #Feign COnfiguration
+# feign:
+#   client:
+#     config:
+#       default:
+#         connectTimeout: 5000
+#         readTimeout: 5000
+#         loggerlevel: basic
+#
+#       book-service:
+#         connectTimeout: 5000
+#         readTimeout: 3000
+#         loggerLevel: full
+#       user-service:
+#         connectTimeout: 2000
+#         readTimeout: 2000
+#         loggerLevel: headers
+#   compression:
+#     request:
+#       enabled: true
+#     response:
+#       enabled: true
+#   circuitbreaker:
+#     enabled: true
+#
+##Service URLs (if not using service discovery)
+# services:
+#   book-service:
+#     url: http://localhost:8082
+#   user-service:
+#     url: http://localhost:8083
+#   notification-service:
+#     url: http://localhost:8084
+#
+# #Circuit Breaker Configuraiton
+#
+#  datasource:
+#    url: jdbc:h2:mem:testdb
+#    driverClassName: org.h2.Driver
+#    username: sa
+#    password: password
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#
+#  h2:
+#    console:
+#      enable: true
+#        path:/h2-console
+#
+##Open API Cofiguration
+#springdoc:
+#  api-doc:
+#    api-docs:
+#      path:/v3/api-docs
+#    swagger-ui:
+#      path:/swagger-ui.html
+#
+##    info:
+##      title: Library Management API
+##        description:
+##        version: 1.0.0
+##        contact:
+##          name: API support
+##          email: test@test.com
+#
+#  logging:
+#    level:
+#      org.example:  DEBUG
+#        org.springframework.web:DEBUG
+#
+#
+#
