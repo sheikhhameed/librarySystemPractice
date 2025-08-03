@@ -40,7 +40,7 @@ pipeline {
         stage('Start App') {
             steps {
                 echo 'Starting Spring Boot application...'
-                bat 'start /B java -jar %APP_JAR%'
+                bat 'start "" cmd /c "java -jar %APP_JAR% > output.log 2>&1"'
                 sleep time: 30, unit: 'SECONDS'
             }
         }
