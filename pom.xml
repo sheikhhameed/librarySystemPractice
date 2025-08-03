@@ -61,4 +61,8 @@
             <version>2.2.0</version>
         </dependency>
     </dependencies>
+    <build>
+        <finalName>librarySystemPractice</finalName>
+
+    </build>
 </project>

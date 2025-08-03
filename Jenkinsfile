@@ -41,14 +41,14 @@ pipeline {
             steps {
                 echo 'Starting Spring Boot application...'
                 bat 'start /B java -jar %APP_JAR%'
-                sleep time: 15, unit: 'SECONDS'
+                sleep time: 30, unit: 'SECONDS'
             }
         }
 
         stage('Test API via Curl') {
             steps {
                 echo 'Calling API from Jenkins...'
-                bat "curl http://localhost:%SERVER_PORT%/api/books"
+                bat "curl http://localhost:%SERVER_PORT%/actuator/health"
             }
         }
 
