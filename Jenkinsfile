@@ -48,7 +48,7 @@ pipeline {
         stage('Test API via Curl') {
             steps {
                 echo 'Calling API from Jenkins...'
-                bat "curl http://localhost:%SERVER_PORT%/your-api-endpoint"
+                bat "curl http://localhost:%SERVER_PORT%/api/books"
             }
         }
 
